@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
+}
+
+.heading h1 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Navigation Links */
+.list {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.react-link {
+  text-decoration: none;
+  color: black;
+}
+
+.list:hover {
+  color: #ff6347;
+}
+
+.contact-wrapper {
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.contact-dropdown {
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem 1rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+}
+
+.contact-dropdown a {
+  color: #333;
+  text-decoration: none;
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-dropdown a:hover {
+  color: orange;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cart-button {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-button:focus {
+  outline: none;
+}
+
+.user-icon-wrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.user-icon-wrapper:hover {
+  background-color: #f2f2f2;
+}
+
+/* ✅ Responsive Navigation */
+@media screen and (max-width: 768px) {
+  .heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    height: auto;
+    padding: 1rem;
+  }
+
+  ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+    padding-left: 0;
+  }
+
+  .icons {
+    align-self: flex-end;
+    gap: 1.2rem;
+  }
+}

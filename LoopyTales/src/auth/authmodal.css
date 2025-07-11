@@ -1,0 +1,58 @@
+.auth-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 90%;
+}
+
+.auth-modal h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.auth-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-modal input {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.auth-modal button {
+  padding: 0.7rem;
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.auth-modal button:hover {
+  background-color: #e56c00;
+}
+
+.toggle-link {
+  text-align: center;
+  margin-top: 1rem;
+  color: #555;
+  cursor: pointer;
+  font-size: 0.9rem;
+}

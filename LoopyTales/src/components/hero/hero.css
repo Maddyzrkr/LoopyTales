@@ -1,0 +1,115 @@
+.hero-slider {
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slide-image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Change from center to start */
+  align-items: center;
+  padding: 2rem 3rem;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 10rem; /* Pushes the content slightly down */
+}
+
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  color: black;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+/* Use this if you're using <Link> for navigation */
+.hero-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1.1rem;
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #e56c00;
+}
+
+.swiper-slide {
+  height: 100%;
+  display: flex;
+}
+
+/* -------------------- Responsive -------------------- */
+@media (max-width: 1024px) {
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide-content {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .slide-image,
+  .hero-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-content {
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

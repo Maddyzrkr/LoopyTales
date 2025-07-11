@@ -1,0 +1,38 @@
+/* .homewrapper{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+} */
+
+.homewrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Optional: Add some consistent padding/margins for different screens */
+@media (max-width: 1024px) {
+  .homewrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .homewrapper {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .homewrapper {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
