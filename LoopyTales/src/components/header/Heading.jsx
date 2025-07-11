@@ -149,7 +149,7 @@ import { Link } from 'react-router-dom';
 import './navbar.css';
 import './cart-drawer.css';
 import { useCart } from '../../context/CartContext';
-import AuthModal from '../../auth/AuthModal'
+import AuthModal from '../../auth/AuthModal';
 function Heading() {
   const [hovered, setHovered] = useState(false);
   const [showContact, setShowContact] = useState(false);
