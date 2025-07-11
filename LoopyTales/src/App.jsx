@@ -28,7 +28,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Shop from './pages/Shop';
-import ProductDetail from './pages/productDetails';
+import ProductDetail from './pages/ProductDetails';
 import About from './pages/About';
 import { CartProvider } from './context/CartContext';
 import Heading from './components/header/Heading'; // Your navbar
